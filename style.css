@@ -1,13 +1,47 @@
+:root {
+    --body-color: #363537;
+    --font-color: #FFFFFA;
+}
+
+
 body {
-    background-color: black;
+    background-color: var(--body-color);
 }
 h1 {
-    color:blanchedalmond;
+    color: var(--font-color);
     font-size: 4em;
     text-align: center;
+    font-family: 'PT Serif', serif;
 }
 .container {
     display: flex;
     flex-direction: column;
     margin:  100px auto;
+    position: relative;
 }
+.container::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    background-color: #FF312E;
+    height: 10px;
+    width: 5%;
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0.5;
+}
+.container::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    background-color: #515052;
+    height: 10px;
+    width: 30%;
+    border-radius: 10px;
+    z-index: -1;
+}
+
