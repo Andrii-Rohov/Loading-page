@@ -14,6 +14,7 @@ h1 {
     font-family: 'PT Serif', serif;
 }
 .container {
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     margin:  100px auto;
@@ -47,6 +48,13 @@ h1 {
     width: 100%;
     border-radius: 10px;
     z-index: -1;
+}
+
+@media only screen and (max-width: 982px) {
+    h1 {
+        font-size: 2em;
+    }
+    
 }
 
 
